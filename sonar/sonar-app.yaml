@@ -66,3 +66,17 @@ spec:
         persistentVolumeClaim:
           claimName: sonar-pvc
 ---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sonar-svc
+  namespace: sonar
+  labels:
+    app: sonar
+spec:
+  ports:
+  - port: 9000
+    name: sonar
+  selector:
+    app: sonar
+---

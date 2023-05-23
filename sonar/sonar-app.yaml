@@ -79,4 +79,4 @@ spec:
     port: 80
   selector:
     app: sonar
-  type: LoadBalancer
+  type: NodePort

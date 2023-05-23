@@ -5,7 +5,7 @@ metadata:
   namespace: sonar
 spec:
   rules:
-  - host: myfancy.domain.com
+  - host:
     http:
       paths:
       - pathType: Prefix

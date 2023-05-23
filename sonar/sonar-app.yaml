@@ -75,8 +75,8 @@ metadata:
     app: sonar
 spec:
   ports:
-  - port: 9000
-    name: sonar
+  - name: sonar
+    port: 80
   selector:
     app: sonar
----
+  type: LoadBalancer
